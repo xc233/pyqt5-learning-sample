@@ -21,7 +21,7 @@ class Example(QWidget):
                 '0', '.', '=', '+']
         
         positions = [(i, j) for i in range(5) for j in range(4)]
-
+        print(list(zip(positions, names)))
         for position, name in zip(positions, names):
             if name == '':
                 continue
